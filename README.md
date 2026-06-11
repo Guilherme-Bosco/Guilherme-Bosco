@@ -24,7 +24,6 @@ Construindo produtos em produção desde 2025, com foco em automação de proces
 - **ReativaLead** — micro SaaS de reativação de leads imobiliários via WhatsApp
 - **MNS Control** — dashboard operacional da agência
 - **Gênios Clean** — atendimento humanizado com IA para empresa de higienização
-- **NUI Atendimento IA** *(em desenvolvimento)* — atendimento com IA para móveis planejados
 
 ## Contato
 
@@ -60,7 +59,7 @@ Building production products since 2025, focused on process automation, conversa
 - **ReativaLead** — real estate lead reactivation micro SaaS via WhatsApp
 - **MNS Control** — internal agency operations dashboard
 - **Gênios Clean** — humanized AI service for an upholstery cleaning company
-- **NUI Atendimento IA** *(in development)* — AI service for a custom furniture company
+- 
 
 ## Contact
 
