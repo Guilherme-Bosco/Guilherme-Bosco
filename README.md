@@ -78,6 +78,7 @@ I build the system that unblocks each of these cases, with a clear scope and foc
 
 - [**ReativaLead**](https://github.com/Guilherme-Bosco/reativalead-showcase). Active prospecting and mass-dispatch platform via WhatsApp. Works for any sector that needs to reactivate a lead base. Initial go-to-market focus in real estate. 20% response rate in production. Also used internally in the agency's day-to-day.
 - [**MNS Control**](https://github.com/Guilherme-Bosco/mns-control-showcase). Operational platform used by the agency's clients. Multi-tenant dashboard with service CRM, follow-up automation, appointment confirmation, service notification, and 90-day post-service remarketing, plus an internal monitoring and metrics panel for the agency to track all tenants.
+- - [**Active and Reactive Prospecting System**](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase). Multi-channel prospecting system used by Mind in Shift itself, with AI on the front line. Combines active outreach via ReativaLead, reactive capture via WhatsApp and Instagram, and the Cris agent qualifying at scale. 4 months in production, ~40 leads/month, ~20% conversion to meeting.
 
 ## Stack
 
