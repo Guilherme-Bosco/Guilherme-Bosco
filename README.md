@@ -25,6 +25,7 @@ Construo o sistema que destrava cada um desses casos, com escopo claro e foco no
 
 - [**ReativaLead**](https://github.com/Guilherme-Bosco/reativalead-showcase). Plataforma de prospecção ativa e disparo em massa via WhatsApp. Serve qualquer setor que precise reativar base de leads. Foco inicial de go-to-market em mercado imobiliário. 20% de taxa de resposta em produção, usado também no dia a dia da própria agência.
 - [**MNS Control**](https://github.com/Guilherme-Bosco/mns-control-showcase). Plataforma operacional dos clientes da agência. Dashboard multi-tenant com CRM de serviços, automações de follow-up, confirmação de agendamento, notificação de serviço e remarketing pós-atendimento (90 dias), com painel interno de monitoramento e métricas pra agência acompanhar todos os tenants.
+- - [**Sistema de Prospecção Ativa e Reativa**](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase). Sistema multicanal de prospecção da própria Mind in Shift, com IA na linha de frente. Combina disparo ativo via ReativaLead, captura reativa via WhatsApp e Instagram, e o agente Cris qualificando em escala. 4 meses em produção, ~40 leads/mês, ~20% de conversão pra reunião.
 
 ## Stack
 
