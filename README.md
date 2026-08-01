@@ -1,107 +1,91 @@
-# Olá 👋
+# Guilherme Bosco
 
-Sou Co-founder da [Mind in Shift](https://mindinshift.com.br/), agência de automação e IA em Jacareí-SP. Cuido da parte técnica da operação: construo agentes conversacionais, automações de fluxo e dashboards que rodam em produção atendendo cliente real, todo dia.
+**Co-founder & CTO @ [Mind in Shift](https://mindinshift.com.br)** · Automation & AI · Jacareí-SP, Brazil
 
-**Especialista em automação. Construo sistemas que tiram gente de cima do operacional.**
+> I build production AI systems that take people out of operational work — WhatsApp AI agents, multi-tenant dashboards, and workflow automation for service businesses. Everything linked below runs in production, serving real clients, every day.
 
-## Que tipo de problema eu resolvo
-
-- Empresa que cresceu e a operação ainda depende de planilha, WhatsApp do dono e gente lembrando das coisas
-- Lead que entra e ninguém recontacta, ou recontacta tarde demais
-- Atendimento que não escala porque depende de pessoa disponível em horário comercial
-- Operação rodando em três ferramentas diferentes que não conversam entre si
-- Time gastando 10 ou 20 horas por semana em tarefa que computador faria sozinho
-
-Construo o sistema que destrava cada um desses casos, com escopo claro e foco no que vai durar depois do deploy.
-
-## O que eu construo
-
-- **Agentes de IA via WhatsApp** que atendem, qualificam e agendam 24/7 (n8n, OpenAI, Anthropic, Evolution API, Zapster, Chatwoot)
-- **Automações de fluxo** que conectam sistemas que antes ficavam soltos (n8n self-hosted em Docker Swarm)
-- **Dashboards multi-tenant** com isolamento por RLS pra quem atende vários clientes (Next.js 16, TypeScript, Tailwind, shadcn/ui, Supabase)
-- **Integrações via API** que juntam ferramentas que não conversavam entre si
-
-## Em produção hoje
-
-- [**ReativaLead**](https://github.com/Guilherme-Bosco/reativalead-showcase). Plataforma de prospecção ativa e disparo em massa via WhatsApp. Serve qualquer setor que precise reativar base de leads. Foco inicial de go-to-market em mercado imobiliário. 20% de taxa de resposta em produção, usado também no dia a dia da própria agência.
-- [**MNS Control**](https://github.com/Guilherme-Bosco/mns-control-showcase). Plataforma operacional dos clientes da agência. Dashboard multi-tenant com CRM de serviços, automações de follow-up, confirmação de agendamento, notificação de serviço e remarketing pós-atendimento (90 dias), com painel interno de monitoramento e métricas pra agência acompanhar todos os tenants.
-- [**Sistema de Prospecção Ativa e Reativa**](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase). Sistema multicanal de prospecção da própria Mind in Shift, com IA na linha de frente. Combina disparo ativo via ReativaLead, captura reativa via WhatsApp e Instagram, e o agente Cris qualificando em escala. 4 meses em produção, ~40 leads/mês, ~20% de conversão pra reunião.
-- [**Gestor de Projetos no Discord**](https://github.com/Guilherme-Bosco/gestor-projetos-discord-showcase). Sistema interno de gestão de tarefas operado 100% por linguagem natural no Discord. Classificador de intenção via GPT-4o-mini roteia pra workflows especializados. 3 meses em produção, ~170 tarefas processadas, ~40h/mês economizadas pela equipe.
-- [**MNS Creator**](https://github.com/Guilherme-Bosco/mns-creator-showcase). Sistema de produção de conteúdo com IA, em pré-lançamento. 13 workflows orquestrados em n8n, persona persistida em banco, stack distintivo (Brave Search + Apify + Notion + Canva). 10 de 13 workflows ativos, go-live 20 jun 2026.
-
-## Stack
-
-- **Frontend.** Next.js 16, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend.** Next.js Server Components, n8n self-hosted
-- **Banco.** PostgreSQL (Supabase) com RLS, pgvector
-- **Cache e fila.** Redis
-- **Automação.** n8n em Docker Swarm
-- **Mensageria.** Zapster API, Evolution API
-- **IA.** OpenAI, Anthropic via API
-- **Hosting.** Vercel (frontend), VPS (backend)
-
-## Como eu trabalho
-
-Começo entendendo a dor real antes de propor código. Muita coisa que parece problema técnico é processo mal definido, e construir software em cima de processo torto só esconde o problema. Toda escolha técnica vem com trade-off, e o cliente precisa saber qual é antes de a gente começar. Quando entrego, entrego o que roda em produção, não protótipo que precisa de babá.
-
-## Contato
-
-🌐 [mindinshift.com.br](https://mindinshift.com.br/)  
-💼 [LinkedIn](https://www.linkedin.com/in/guilherme-bosco-dos-santos-012bb620b/)  
-📧 contato@mindinshift.com.br  
-📍 Jacareí-SP, Brasil
+I own all technical execution at the agency: architecture, infrastructure, integrations, and the AI layer. My co-founder Micaela owns product, design, and the front-end. The result is a small two-person operation running five systems in production on a single self-hosted stack.
 
 ---
 
-# Hi 👋
+## What I do
 
-I'm Co-founder of [Mind in Shift](https://mindinshift.com.br/), an automation and AI agency based in Brazil. I handle the technical side: building conversational agents, workflow automations, and dashboards that run in production, serving real clients every day.
+I solve operational problems that don't scale on human effort:
 
-**Automation specialist. I build systems that get people out of operational work.**
+- Companies that outgrew their operation and still run on spreadsheets, the owner's WhatsApp, and people remembering things.
+- Leads that come in and never get followed up, or get followed up too late.
+- Customer service that can't scale because it depends on someone being available in business hours.
+- Operations spread across three tools that don't talk to each other.
 
-## The kind of problem I solve
+The output is always the same shape: a system that runs in production, with a clear scope and a focus on what survives after the deploy — not a prototype that needs babysitting.
 
-- Companies that outgrew their operation and still depend on spreadsheets, the owner's WhatsApp, and people remembering things
-- Leads that come in and nobody follows up, or follows up too late
-- Customer service that doesn't scale because it depends on someone being available during business hours
-- Operations running across three different tools that don't talk to each other
-- Teams spending 10 or 20 hours a week on tasks a computer would do alone
+---
 
-I build the system that unblocks each of these cases, with a clear scope and focus on what will last after the deploy.
+## How I build
 
-## What I build
+A few architectural patterns show up across every system I ship:
 
-- **WhatsApp AI agents** that serve, qualify, and schedule 24/7 (n8n, OpenAI, Anthropic, Evolution API, Zapster, Chatwoot)
-- **Workflow automations** that connect systems that used to be siloed (n8n self-hosted on Docker Swarm)
-- **Multi-tenant dashboards** with RLS isolation for businesses serving multiple clients (Next.js 16, TypeScript, Tailwind, shadcn/ui, Supabase)
-- **API integrations** that bring together tools that didn't talk to each other
+- **The database is the single source of truth.** The AI agent and the dashboard both talk to the database, not to each other. Two clients, one Postgres. This removes an entire class of "agent API vs dashboard API" glue and keeps every interface consistent by construction.
+- **Multi-tenancy through PostgreSQL Row-Level Security.** Isolation lives at the lowest possible level. Even a valid token from another tenant is refused by the database. The application never has to *remember* to filter, because there's no way to forget.
+- **n8n self-hosted as the orchestration backbone.** Business logic runs as visual, node-by-node-debuggable workflows with a recorded execution history, on Docker Swarm. A change that would take half a day in serverless code takes 15 minutes here — and non-engineers can read the flows.
+- **Model splits for cost.** GPT-4o for creative and strategic work, GPT-4o-mini for structured evaluation and classification. Equivalent quality on structured tasks for a fraction of the price.
+- **Explicit handling of fragile chains.** Long cascading pipelines fail gracefully (`neverError: true`, structured logs to Postgres, per-node error handling) so one broken call never silently kills a weekly production run.
+- **Pragmatism over the "right" answer on paper.** Google Sheets when a real database is overkill for a 2-person MVP. Discord as the entire interface when a web app would just reintroduce the context-switching it was meant to kill. The tool that ships value fastest wins until the problem justifies more.
 
-## In production today
+---
 
-- [**ReativaLead**](https://github.com/Guilherme-Bosco/reativalead-showcase). Active prospecting and mass-dispatch platform via WhatsApp. Works for any sector that needs to reactivate a lead base. Initial go-to-market focus in real estate. 20% response rate in production. Also used internally in the agency's day-to-day.
-- [**MNS Control**](https://github.com/Guilherme-Bosco/mns-control-showcase). Operational platform used by the agency's clients. Multi-tenant dashboard with service CRM, follow-up automation, appointment confirmation, service notification, and 90-day post-service remarketing, plus an internal monitoring and metrics panel for the agency to track all tenants.
-- [**Active and Reactive Prospecting System**](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase). Multi-channel prospecting system used by Mind in Shift itself, with AI on the front line. Combines active outreach via ReativaLead, reactive capture via WhatsApp and Instagram, and the Cris agent qualifying at scale. 4 months in production, ~40 leads/month, ~20% conversion to meeting.
-- [**Discord Project Manager**](https://github.com/Guilherme-Bosco/gestor-projetos-discord-showcase). Internal task management system operated 100% by natural language inside Discord. Intent classifier via GPT-4o-mini routes to specialized workflows. 3 months in production, ~170 tasks processed, ~40h/month saved.
-- [**MNS Creator**](https://github.com/Guilherme-Bosco/mns-creator-showcase). AI-driven content production system, in pre-launch. 13 workflows orchestrated in n8n, persona persisted in database, distinctive stack (Brave Search + Apify + Notion + Canva). 10 of 13 workflows active, go-live June 20, 2026.
+## Systems in production
 
-## Stack
+Five systems, all live, all with real usage numbers. Each repo is a technical case study — architecture, decisions, trade-offs, known limitations.
 
-- **Frontend.** Next.js 16, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend.** Next.js Server Components, n8n self-hosted
-- **Database.** PostgreSQL (Supabase) with RLS, pgvector
-- **Cache and queue.** Redis
-- **Automation.** n8n on Docker Swarm
-- **Messaging.** Zapster API, Evolution API
-- **AI.** OpenAI, Anthropic via API
-- **Hosting.** Vercel (frontend), VPS (backend)
+### [MNS Control](https://github.com/Guilherme-Bosco/mns-control-showcase) — multi-tenant operations dashboard
+The operational platform the agency's clients run their day on: services CRM, follow-up automation, appointment confirmation, and 90-day post-service remarketing, with a SuperAdmin panel to monitor every tenant.
+**Stack:** Next.js 16 · Supabase (PostgreSQL + native RLS) · n8n · Redis · WAHA · GPT-4.1-mini
+**In production ~3 months** — first client (Gênios Clean) with 34+ clients registered and the full command-based operation replaced by the dashboard.
+
+### [ReativaLead](https://github.com/Guilherme-Bosco/reativalead-showcase) — outbound WhatsApp prospecting
+Reactivates dormant lead bases and qualifies interest over WhatsApp, handing the sales team only the leads that replied. Smart spreadsheet import, template rotation, and an automatic 4-touch follow-up.
+**Stack:** Next.js 16 · Supabase · n8n (92-node follow-up flow) · Redis · WAHA
+**In production** — **20% response rate**, above the typical 5–10% cold-outreach benchmark.
+
+### [Active & Reactive Prospecting System](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase) — multichannel AI qualification
+The agency's own funnel: active WhatsApp outreach, reactive WhatsApp + Instagram capture, and the **Cris** AI agent qualifying leads on the front line, with an explicit handoff to humans on trigger.
+**Stack:** Chatwoot (self-hosted) · WAHA · Meta Business API · n8n (LangChain AI Agent) · gpt-5.4-mini + Whisper · MongoDB · Redis · Postgres + pgvector
+**In production 4 months** — **~40 leads/month, ~20% conversion to meeting**, 70–80% of conversations handled with no human handoff.
+
+### [Discord Project Manager](https://github.com/Guilherme-Bosco/gestor-projetos-discord-showcase) — natural-language task management
+Internal task system operated 100% in natural language inside Discord — no slash commands, no other app. A GPT-4o-mini intent classifier routes to specialized workflows; morning + nightly rituals keep the whole team in sync.
+**Stack:** Discord (custom OAuth bot) · n8n · GPT-4o-mini · Google Sheets · Redis
+**In production 3 months** — **170+ tasks processed, ~40h/month saved**, and it finally got a non-technical co-founder to adopt a management system.
+
+### [MNS Creator](https://github.com/Guilherme-Bosco/MNSCreator-Showcase) — AI content production pipeline
+Researches trends, writes complete scripts, and publishes to an editorial calendar every week, in each profile's exact voice — with each persona built via structured interview and **persisted (and versioned) in the database**, not baked into a prompt.
+**Stack:** n8n (13 orchestrated workflows) · Next.js 15 · Supabase · GPT-4o + GPT-4o-mini · Brave Search · Apify · Notion · Canva
+**Pre-launch** — 10 of 13 workflows active, internal go-live June 20, 2026.
+
+---
+
+## Core stack
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | Next.js 16, TypeScript, Tailwind CSS, shadcn/ui |
+| **Backend / orchestration** | n8n self-hosted (Docker Swarm), Next.js Server Components & Server Actions |
+| **Data** | PostgreSQL / Supabase (native RLS, pgvector), Redis, MongoDB |
+| **Messaging** | WAHA, Evolution API, Meta Business API, Chatwoot |
+| **AI** | OpenAI (GPT-4o, GPT-4o-mini, gpt-5.4-mini, Whisper), Anthropic, LangChain AI Agent |
+| **Infra** | Docker Swarm on a Hostinger VPS, Traefik (TLS via Let's Encrypt), Portainer, Vercel |
+
+---
 
 ## How I work
 
-I start by understanding the real pain before proposing code. A lot of what looks like a technical problem is actually a poorly defined process, and building software on top of a broken process only hides the problem. Every technical choice comes with a trade-off, and the client needs to know which one before we start. When I deliver, I deliver something that runs in production, not a prototype that needs hand-holding.
+I start by understanding the real pain before proposing code. A lot of what looks like a technical problem is a poorly defined process, and building software on top of a broken process only hides it. Every technical choice comes with a trade-off, and the client needs to know which one before we start. And when I deliver, I deliver something that runs in production — not a prototype that needs hand-holding.
+
+I'm also deliberate about scope. The "known limitations" and "what I chose *not* to build" sections in each case study are there on purpose: shipping the right small thing beats shipping the impressive wrong thing.
+
+---
 
 ## Contact
 
-🌐 [mindinshift.com.br](https://mindinshift.com.br/)  
-💼 [LinkedIn](https://www.linkedin.com/in/guilherme-bosco-dos-santos-012bb620b/)  
-📧 contato@mindinshift.com.br  
-📍 Jacareí, SP, Brazil
+🌐 [mindinshift.com.br](https://mindinshift.com.br/) · 💼 [LinkedIn](https://www.linkedin.com/in/guilherme-bosco-dos-santos-012bb620b/) · 📧 contato@mindinshift.com.br · 📍 Jacareí-SP, Brazil
