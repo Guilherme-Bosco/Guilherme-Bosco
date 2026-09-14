@@ -2,7 +2,7 @@
 
 **Co-founder & CTO @ [Mind in Shift](https://mindinshift.com.br)** · Automation & AI · Jacareí-SP, Brazil
 
-> I build production AI systems that take people out of operational work — WhatsApp AI agents, multi-tenant dashboards, and workflow automation for service businesses. Everything linked below runs in production, serving real clients, every day.
+> I build production AI systems that take people out of operational work, WhatsApp AI agents, multi-tenant dashboards, and workflow automation for service businesses. Everything linked below runs in production, serving real clients, every day.
 
 I own all technical execution at the agency: architecture, infrastructure, integrations, and the AI layer. My co-founder Micaela owns product, design, and the front-end. The result is a small two-person operation running five systems in production on a single self-hosted stack.
 
@@ -57,11 +57,6 @@ The agency's own funnel: active WhatsApp outreach, reactive WhatsApp + Instagram
 Internal task system operated 100% in natural language inside Discord — no slash commands, no other app. A GPT-4o-mini intent classifier routes to specialized workflows; morning + nightly rituals keep the whole team in sync.
 **Stack:** Discord (custom OAuth bot) · n8n · GPT-4o-mini · Google Sheets · Redis
 **In production 3 months** — **170+ tasks processed, ~40h/month saved**, and it finally got a non-technical co-founder to adopt a management system.
-
-### [MNS Creator](https://github.com/Guilherme-Bosco/MNSCreator-Showcase) — AI content production pipeline
-Researches trends, writes complete scripts, and publishes to an editorial calendar every week, in each profile's exact voice — with each persona built via structured interview and **persisted (and versioned) in the database**, not baked into a prompt.
-**Stack:** n8n (13 orchestrated workflows) · Next.js 15 · Supabase · GPT-4o + GPT-4o-mini · Brave Search · Apify · Notion · Canva
-**Pre-launch** — 10 of 13 workflows active, internal go-live June 20, 2026.
 
 ---
 
