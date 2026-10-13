@@ -17,6 +17,14 @@ Jacareí-SP, Brazil · open to CLT roles (remote, or on-site in Florianópolis /
 
 ---
 
+## How I start: the problem before the code
+
+Most of my work starts away from the keyboard. At Mind in Shift, before proposing anything, we sit with how the client's business actually runs day to day: who does what, where information gets lost between WhatsApp, spreadsheets and people's memory, and which tasks someone repeats by hand every morning.
+
+A lot of what arrives looking like a technical problem turns out to be an unclear process, and automating a broken process only hides it. So the first deliverable is an understanding of the operation, and the system comes after, shaped around the people who will use it every day. Every case study below starts from that kind of day-to-day pain, and most of the decisions in them only make sense in light of how the client works.
+
+---
+
 ## How I build (the honest part)
 
 I own the architecture, the data model, the back-end logic, the agents and the prompt design. Those are hands-on.
@@ -45,13 +53,6 @@ Campaign dispatch, a 4-touch automated follow-up cadence and reply detection for
 
 **Stack:** Supabase (PostgreSQL + RLS + pgvector) · n8n · Redis · WAHA · Next.js 16
 
-### [Cris · lead qualification agent](https://github.com/Guilherme-Bosco/prospeccaodeagencia-showcase) · conversational AI on WhatsApp
-The front line of the studio's own sales funnel: qualifies inbound and outbound leads with tool calls, and hands off to a human on explicit triggers.
-
-**Highlights:** in production since Feb 2026 · ~40 leads/month, ~20% reaching a booked meeting (Aug 2026) · tool-based handoff instead of regex detection
-
-**Stack:** n8n AI Agent node · OpenAI (gpt-5.4-mini, Whisper) · MongoDB · Redis · Chatwoot · WAHA
-
 ### [Discord Project Manager](https://github.com/Guilherme-Bosco/gestor-projetos-discord-showcase) · natural-language task management
 The team's task system, operated entirely in Discord messages: an LLM intent classifier routes each message to a specialized workflow.
 
@@ -59,7 +60,7 @@ The team's task system, operated entirely in Discord messages: an LLM intent cla
 
 **Stack:** n8n · OpenAI GPT-4o-mini · Discord bot · Google Sheets · Redis
 
-Also running, not yet written up: a WhatsApp triage and routing assistant for a psychology clinic (n8n, OpenAI, Redis, MongoDB).
+Also running, not yet written up: a WhatsApp lead qualification agent with tool-based human handoff (n8n AI Agent node, OpenAI, MongoDB, Redis, Chatwoot) and a WhatsApp triage and routing assistant for a psychology clinic (n8n, OpenAI, Redis, MongoDB).
 
 ---
 
