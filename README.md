@@ -17,11 +17,13 @@ Jacareí-SP, Brazil · open to CLT roles (remote, or on-site in Florianópolis /
 
 ---
 
-## How I start: the problem before the code
+## Where I come from: process before tools
 
-Most of my work starts away from the keyboard. At Mind in Shift, before proposing anything, we sit with how the client's business actually runs day to day: who does what, where information gets lost between WhatsApp, spreadsheets and people's memory, and which tasks someone repeats by hand every morning.
+Before software, I worked in manufacturing, and that's where I learned how to look at an operation: continuous improvement, kaizen, root cause analysis, loss control. My technical degree in Industrial Automation (SENAI) was built entirely around the factory floor, and I'm now studying Production Engineering at Univesp. None of that taught me a tool. It taught me to measure before changing anything, to look for the cause instead of the symptom, and to treat every manual repetition as waste.
 
-A lot of what arrives looking like a technical problem turns out to be an unclear process, and automating a broken process only hides it. So the first deliverable is an understanding of the operation, and the system comes after, shaped around the people who will use it every day. Every case study below starts from that kind of day-to-day pain, and most of the decisions in them only make sense in light of how the client works.
+That is still how I work. Most of it starts away from the keyboard. At Mind in Shift, before proposing anything, we sit with how the client's business actually runs day to day: who does what, where information gets lost between WhatsApp, spreadsheets and people's memory, and which tasks someone repeats by hand every morning.
+
+A lot of what arrives looking like a technical problem turns out to be an unclear process, and automating a broken process only hides it. So the first deliverable is an understanding of the operation, and the system comes after, shaped around the people who will use it every day. Every case study below starts from that kind of day-to-day pain, and most of the decisions in them only make sense in light of how the client works. The production incidents are written the way I learned to treat a failure on the line: symptom, root cause, fix, and what changed so it doesn't come back.
 
 ---
 
